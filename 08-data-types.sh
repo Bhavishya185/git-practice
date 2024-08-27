@@ -6,4 +6,4 @@ NUMBER2=$2
 SUM=$(($NUMBER1+$NUMBER2))
 
 
-echo "Total pf $NUMBER1 and $NUMBER2 is: $SUM"
+echo "Total of $NUMBER1 and $NUMBER2 is: $SUM"
