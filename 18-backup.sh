@@ -25,16 +25,19 @@ then
     echo "$SOURCE_DIR does not exist...Please check"
 fi
 
-if [ ! -d $SOURCE_DIR]
+if [ ! -d $DEST_DIR ]
 then
-    echo "$SOURCE_DIR does not exist...Please check"
+    echo "$DEST_DIR does not exist...Please check"
 fi
 
 FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
 
-if [ -n $FILES ]
+echo "Files: $FILES"
+
+
+if [ ! -z $FILES ] #true if FILES is empty
 then 
     echo "Files are found"
 else 
-    echo "No files are found"
+    echo "No files are found $DAYS"
 fi
