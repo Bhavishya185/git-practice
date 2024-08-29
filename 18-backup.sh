@@ -10,7 +10,7 @@ N="\e[0m"
 Y="\e[33m"
 
 USAGE(){
-     echo -e "$R USAGE:: $N sh 18-backup.sh <source> <destination> <days(ooptional)>'
+echo -e "$R USAGE:: $N sh 19-backup.sh <source> <destination> <days(optional)>"
 }
     
 #check the source and destination are provided
